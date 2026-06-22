@@ -1,11 +1,11 @@
 services:
   - type: web
     name: site-policia-mumias
-    runtime: bun
+    runtime: node
     plan: free
     branch: main
     buildCommand: bun install && bun run build
-    startCommand: bun .output/server/index.mjs
+    startCommand: node .output/server/index.mjs
     envVars:
       - key: NODE_ENV
         value: production

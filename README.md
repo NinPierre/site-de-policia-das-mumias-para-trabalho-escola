@@ -135,6 +135,15 @@ bun run type-check       # Verifica tipos TypeScript
 bun run lint             # Executa eslint
 ```
 
+---
+
+## 📸 Captura de Tela
+
+![Página Principal](src/assets/badge.png)
+
+*Interface temática do Departamento de Polícia*
+
+---
 
 ## 🤝 Contribuindo
 
