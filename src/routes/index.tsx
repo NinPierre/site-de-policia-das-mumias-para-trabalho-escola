@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import anel from "@/assets/anel.jpg";
-import suspeito from "@/assets/suspeito-real.png.asset.json";
+import suspeito from "@/assets/suspeito.png";
 import badge from "@/assets/badge.png";
 
 
@@ -11,6 +11,7 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Arquivo policial sobre o roubo do Anel de Princesa Nefer — investigação do filme As Múmias e o Anel Perdido." },
     ],
     links: [
+      { rel: "icon", href: badge },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Special+Elite&family=Roboto+Condensed:wght@400;700&display=swap" },
@@ -77,7 +78,7 @@ function Index() {
           <div className="file-card rounded-sm p-6">
             <p className="tape inline-block px-4 py-1 text-xs mb-4 bg-danger text-foreground" style={{background:"var(--danger)", color:"white"}}>Suspeito Procurado</p>
             <img
-              src={suspeito.url}
+              src={suspeito}
               alt="Foto policial de Lorde Sylvester Carnaby"
               width={1024} height={1024}
               loading="lazy"
@@ -139,7 +140,7 @@ function Index() {
         </section>
 
         <footer className="text-center text-muted-foreground text-xs mt-10 font-display tracking-widest">
-          ⚖ DOCUMENTO OFICIAL • USO RESTRITO À APRESENTAÇÃO ESCOLAR ⚖
+          ⚖ DOCUMENTO OFICIAL • by pierre e mumias ⚖
         </footer>
       </div>
     </div>
